@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="demo"></p>
+<!--
+    <script>
+        function bla() {
+            for (var i = 0; i < 10; i++) {
+                //console.log(i);
+            }
+            return i+=i + "";
+        }
+        //bla();
+        
+        var x = bla();
+        document.write(x);
+        
+    </script>
+-->
+<script>
+    var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+      return (this.firstName + " " + this.lastName);
+    }
+};
+document.write(person.fullName());
+
+function findMax() {
+    var i;
+    var max = -Infinity;
+    for(i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    console.log(max[i]);
+    return max;
+} 
+document.getElementById("demo").innerHTML = findMax(743, 82384, 68395, 859684);
+
+
+
+
+</script>
+</body>
+
+</html>
